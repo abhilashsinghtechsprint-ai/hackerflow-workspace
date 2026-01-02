@@ -15,7 +15,8 @@ import {
   Clock,
   Plus,
   Loader2,
-  Save
+  Save,
+  Crosshair
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
