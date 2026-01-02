@@ -2,95 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/500.css';
+@import '@fontsource/jetbrains-mono/700.css';
+
+/* HackerFlow Design System - Obsidian Dark Theme with Cyber Lime Accents */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Base dark obsidian palette */
+    --background: 120 10% 4%;
+    --foreground: 120 5% 90%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 120 8% 7%;
+    --card-foreground: 120 5% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 120 8% 6%;
+    --popover-foreground: 120 5% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Cyber Lime Primary - #32CD32 converted to HSL */
+    --primary: 120 61% 50%;
+    --primary-foreground: 120 10% 4%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - muted terminal green */
+    --secondary: 120 8% 12%;
+    --secondary-foreground: 120 5% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted colors */
+    --muted: 120 6% 15%;
+    --muted-foreground: 120 5% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - brighter lime for highlights */
+    --accent: 120 70% 45%;
+    --accent-foreground: 120 10% 4%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status colors */
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --success: 120 61% 50%;
+    --success-foreground: 120 10% 4%;
+
+    --warning: 45 93% 47%;
+    --warning-foreground: 45 10% 10%;
+
+    --info: 200 80% 50%;
+    --info-foreground: 200 10% 10%;
+
+    /* Borders and inputs */
+    --border: 120 10% 18%;
+    --input: 120 8% 12%;
+    --ring: 120 61% 50%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar specific */
+    --sidebar-background: 120 10% 5%;
+    --sidebar-foreground: 120 5% 85%;
+    --sidebar-primary: 120 61% 50%;
+    --sidebar-primary-foreground: 120 10% 4%;
+    --sidebar-accent: 120 8% 12%;
+    --sidebar-accent-foreground: 120 5% 90%;
+    --sidebar-border: 120 10% 15%;
+    --sidebar-ring: 120 61% 50%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Custom glow effects */
+    --glow-primary: 0 0 20px hsl(120 61% 50% / 0.3);
+    --glow-intense: 0 0 40px hsl(120 61% 50% / 0.5);
+    --glow-subtle: 0 0 10px hsl(120 61% 50% / 0.15);
 
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Terminal cursor */
+    --cursor-blink: 120 61% 50%;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --background: 120 10% 4%;
+    --foreground: 120 5% 90%;
   }
 }
 
@@ -100,6 +87,148 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-mono antialiased;
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  /* Custom scrollbar for terminal aesthetic */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+    border: 2px solid transparent;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground;
+  }
+}
+
+@layer components {
+  /* Terminal glow effect */
+  .terminal-glow {
+    box-shadow: var(--glow-subtle);
+  }
+
+  .terminal-glow-hover:hover {
+    box-shadow: var(--glow-primary);
+  }
+
+  .terminal-glow-intense {
+    box-shadow: var(--glow-intense);
+  }
+
+  /* Scanline effect for retro terminal look */
+  .scanlines::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 1px,
+      hsl(120 10% 4% / 0.03) 1px,
+      hsl(120 10% 4% / 0.03) 2px
+    );
+    pointer-events: none;
+    z-index: 10;
+  }
+
+  /* Cyber grid pattern */
+  .cyber-grid {
+    background-image: 
+      linear-gradient(hsl(120 61% 50% / 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(120 61% 50% / 0.03) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Blinking cursor animation */
+  .cursor-blink::after {
+    content: '█';
+    animation: blink 1s step-end infinite;
+    @apply text-primary;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  /* Typing animation */
+  .typing-animation {
+    overflow: hidden;
+    border-right: 2px solid hsl(var(--primary));
+    white-space: nowrap;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: hsl(var(--primary)); }
+  }
+
+  /* Pulse glow for status indicators */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 5px hsl(120 61% 50% / 0.5);
+    }
+    50% { 
+      box-shadow: 0 0 20px hsl(120 61% 50% / 0.8);
+    }
+  }
+
+  /* Phase timeline connector */
+  .timeline-connector {
+    @apply absolute left-4 top-10 w-0.5 h-full bg-gradient-to-b from-primary/50 to-transparent;
+  }
+
+  /* Code block styling */
+  .code-block {
+    @apply bg-background border border-border rounded-lg p-4 font-mono text-sm overflow-x-auto;
+  }
+
+  /* Matrix-style text effect */
+  .matrix-text {
+    text-shadow: 0 0 10px hsl(120 61% 50% / 0.7);
+  }
+}
+
+@layer utilities {
+  /* Gradient backgrounds */
+  .bg-gradient-cyber {
+    background: linear-gradient(135deg, hsl(120 10% 6%) 0%, hsl(120 10% 4%) 100%);
+  }
+
+  .bg-gradient-terminal {
+    background: linear-gradient(180deg, hsl(120 8% 8%) 0%, hsl(120 10% 4%) 100%);
+  }
+
+  /* Border gradient */
+  .border-gradient-cyber {
+    border: 1px solid transparent;
+    background: linear-gradient(hsl(120 8% 7%), hsl(120 8% 7%)) padding-box,
+                linear-gradient(135deg, hsl(120 61% 50% / 0.3), transparent) border-box;
+  }
+
+  /* Text gradients */
+  .text-gradient-cyber {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(120 61% 50%) 0%, hsl(120 70% 60%) 100%);
   }
 }

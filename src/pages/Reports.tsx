@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '@/hooks/useAuth';
 import { AppSidebar } from '@/components/AppSidebar';
-import { MissionControl } from '@/components/MissionControl';
+import { ReportVault } from '@/components/ReportVault';
 import { Loader2 } from 'lucide-react';
 
-export default function Index() {
+export default function Reports() {
   const { user, loading } = useAuth();
   const navigate = useNavigate();
 
@@ -31,7 +31,7 @@ export default function Index() {
     <div className="min-h-screen bg-background flex">
       <AppSidebar />
       <main className="flex-1 overflow-hidden">
-        <MissionControl />
+        <ReportVault />
       </main>
     </div>
   );
