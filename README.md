@@ -2,10 +2,6 @@
 
 **URL**: https://hackerflow.lovable.app/auth
 
-## How can I edit this code?
-
-There are several ways of editing your application.
-
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
@@ -16,13 +12,13 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone 
+git clone https://github.com/abhilashsinghtechsprint-ai/hackerflow-workspace.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd hackerflow-workspace
 
 # Step 3: Install the necessary dependencies.
-npm i
+npm install
 
 # Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
@@ -52,14 +48,8 @@ This project is built with:
 - shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+## Architecture diagram of the proposed solution
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+<img width="990" height="582" alt="image" src="https://github.com/user-attachments/assets/dd96c322-9aa0-4ea3-9986-86cc3a46bc3d" />
 
-## Can I connect a custom domain to my Lovable project?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
